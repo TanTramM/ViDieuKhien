@@ -1,0 +1,23 @@
+--cpu=Cortex-M4.fp.sp
+"vidu1\startup_stm32f411xe.o"
+"vidu1\main.o"
+"vidu1\stm32f4xx_it.o"
+"vidu1\stm32f4xx_hal_msp.o"
+"vidu1\stm32f4xx_hal_rcc.o"
+"vidu1\stm32f4xx_hal_rcc_ex.o"
+"vidu1\stm32f4xx_hal_flash.o"
+"vidu1\stm32f4xx_hal_flash_ex.o"
+"vidu1\stm32f4xx_hal_flash_ramfunc.o"
+"vidu1\stm32f4xx_hal_gpio.o"
+"vidu1\stm32f4xx_hal_dma_ex.o"
+"vidu1\stm32f4xx_hal_dma.o"
+"vidu1\stm32f4xx_hal_pwr.o"
+"vidu1\stm32f4xx_hal_pwr_ex.o"
+"vidu1\stm32f4xx_hal_cortex.o"
+"vidu1\stm32f4xx_hal.o"
+"vidu1\stm32f4xx_hal_exti.o"
+"vidu1\system_stm32f4xx.o"
+--strict --scatter "Vidu1\Vidu1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Vidu1.map" -o Vidu1\Vidu1.axf

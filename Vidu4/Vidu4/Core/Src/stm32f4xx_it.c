@@ -187,7 +187,17 @@ void SysTick_Handler(void)
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
-
+  static uint8_t time_divider = 0;
+  
+  time_divider++;
+  if (time_divider >= 5) // HAL tick là 1ms, đếm 5 lần = 5ms
+  {
+      time_divider = 0;
+      
+      
+      tick_flag = 1;
+      tick_count++;
+  }
   /* USER CODE END SysTick_IRQn 1 */
 }
 

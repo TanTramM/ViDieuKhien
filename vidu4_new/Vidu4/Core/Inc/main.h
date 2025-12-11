@@ -55,15 +55,29 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void Control_Loop_5ms(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
 #define MOTOR_DIR_Pin GPIO_PIN_7
 #define MOTOR_DIR_GPIO_Port GPIOA
+#define MOTOR_DIR2_Pin GPIO_PIN_0
+#define MOTOR_DIR2_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
+/* Encoder configuration:
+ *  - Encoder PPR = 1000 pulses / revolution (per channel A/B)
+ *  - TIM2 encoder mode = TI1 and TI2, polarity Rising  -> x2 counting
+ *    => CPR (counts per revolution) = PPR * 2 = 2000
+ */
+#define ENCODER_PPR          1000.0
+#define ENCODER_MODE_FACTOR  2.0        // x2 counting (TI1 & TI2, Rising)
+#define ENCODER_CPR          (ENCODER_PPR * ENCODER_MODE_FACTOR)
 
+/* Maximum absolute PID output expected from Simulink model (Saturation block) */
+#define PID_OUTPUT_MAX       10.0
+
+extern volatile uint32_t pid_tick_ms;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

@@ -47,8 +47,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2012-03-08T23:56:49Z</dcterms:created>
   <dc:creator>NGUYEN VINH HAO</dc:creator>
   <cp:lastModifiedBy>Tan_Tram</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-12-11T15:00:06Z</dcterms:modified>
-  <cp:revision>26.7</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-12-10T18:45:00Z</dcterms:modified>
+  <cp:revision>26.3</cp:revision>
   <cp:version>R2022a</cp:version>
 </cp:coreProperties>
 
@@ -63,7 +63,7 @@ __MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <mwcoreProperties xmlns="http://schemas.mathworks.com/package/2014/corePropertiesExtension">
-  <uuid>944628cc-add9-4122-b0e4-e7fff5c69440</uuid>
+  <uuid>53c79a61-feca-427a-afb2-99c06c0c2927</uuid>
 </mwcoreProperties>
 
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
@@ -124,13 +124,13 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
 <?xml version="1.0" encoding="utf-8"?>
 <ModelInformation Version="1.0">
   <Model>
-    <P Name="ModelUUID">1e817be2-0b66-4f60-8197-7aa067f63b5f</P>
+    <P Name="ModelUUID">ba1b7715-9929-44be-aa5e-573461c5f34e</P>
     <P Name="LastSavedArchitecture">win64</P>
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="RTWModifiedTimeStamp">687391199</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:26.7&gt;</P>
+      <P Name="RTWModifiedTimeStamp">687318298</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:26.3&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -441,58 +441,58 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
 __MWOPC_PART_BEGIN__ /simulink/codeDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="coderdictionary.data" packageUris="http://schema.mathworks.com/mf0/coderdictionary_data/R2022a http://schema.mathworks.com/mf0/coderdictionary_data/R2022a/coderdictionary.data">
-  <Container type="Container" uuid="f0eadb6c-fe56-4209-84cd-1f57396ae8b1">
-    <ReferencedContainers type="ReferenceContainerInfo" uuid="43ffe085-9a81-44d2-9d89-a6b07c3a902c">
+  <Container type="Container" uuid="fd1b168d-37b1-400f-8f9c-ed2f53d84c9a">
+    <ReferencedContainers type="ReferenceContainerInfo" uuid="04e7d227-6651-431f-8cf2-4a3a3fff7747">
       <Name>SimulinkBuiltin</Name>
     </ReferencedContainers>
-    <ReferencedContainers type="ReferenceContainerInfo" uuid="71b0e9c1-5899-49bc-9a90-36ecb99be44e">
+    <ReferencedContainers type="ReferenceContainerInfo" uuid="f757f62f-6144-4f76-a87c-2deaa6729b1b">
       <Name>Simulink</Name>
     </ReferencedContainers>
-    <CDefinitions type="C_Definitions" uuid="cf53e90c-e834-41f1-9005-2451091e5539">
-      <SoftwareComponentTemplates type="SoftwareComponentTemplate" uuid="26f9f2a6-bed2-45b9-9d28-ce6d406801a8">
+    <CDefinitions type="C_Definitions" uuid="53f3df5a-4821-4d43-be58-2f2e9ca445a5">
+      <SoftwareComponentTemplates type="SoftwareComponentTemplate" uuid="b55894a4-daa1-4afe-84f1-617d6b1125e6">
         <Name>CODER_DICTIONARY</Name>
-        <Constants type="DataConfiguration" uuid="19368a08-f37e-468b-89a8-c3be6208f6b8">
+        <Constants type="DataConfiguration" uuid="d1b5dbb1-3f68-4305-8cf1-0fb7fbd0c54f">
           <category>Constants</category>
         </Constants>
-        <DataTransfers type="DataConfiguration" uuid="1b5fd2bf-a230-4e38-936f-36d80d2477a7">
+        <DataTransfers type="DataConfiguration" uuid="b9794d66-544c-40c5-8cc8-1f826d392c40">
           <category>DataTransfers</category>
         </DataTransfers>
-        <Execution type="FunctionConfiguration" uuid="83ae6815-c09a-4e9d-963d-430f78c7f80c"/>
-        <GlobalDataStores type="DataConfiguration" uuid="30c65a2c-87cf-4748-af39-a456749ffed0">
+        <Execution type="FunctionConfiguration" uuid="c2f7170b-8a12-49a3-a91f-03e883289c1d"/>
+        <GlobalDataStores type="DataConfiguration" uuid="ef1b50f5-6268-4fa3-a6e6-0cd2ca84a9fa">
           <category>GlobalDataStores</category>
         </GlobalDataStores>
-        <GlobalParameters type="DataConfiguration" uuid="89b4f6b3-8b26-439b-b832-c3f58168b7d9">
+        <GlobalParameters type="DataConfiguration" uuid="2a449cbe-6bec-4129-b917-ee3fd0e00543">
           <category>GlobalParameters</category>
         </GlobalParameters>
-        <InitializeTerminate type="FunctionConfiguration" uuid="fdf3ceb0-c472-4cbd-bd1b-b6c5f9fe4484"/>
-        <Inports type="DataConfiguration" uuid="cb456e6a-85ae-4004-b201-a1e1ae6c9013">
+        <InitializeTerminate type="FunctionConfiguration" uuid="a2c9554c-a40a-4305-957e-7307cd002511"/>
+        <Inports type="DataConfiguration" uuid="4f75c9d2-3483-4fd8-8365-597165ab5e8c">
           <category>Inports</category>
         </Inports>
-        <InternalData type="DataConfiguration" uuid="0b055755-80a4-45cf-94fc-93b7d8b4e1cd">
+        <InternalData type="DataConfiguration" uuid="7bf238b5-2ec7-472e-8483-90e4a6db173f">
           <category>InternalData</category>
         </InternalData>
-        <LocalParameters type="DataConfiguration" uuid="65380922-5661-4d55-bd9f-d11d13f25a2d">
+        <LocalParameters type="DataConfiguration" uuid="578e6670-66a5-435b-8c19-09011e7aa8dd">
           <category>LocalParameters</category>
         </LocalParameters>
-        <ModelData type="DataConfiguration" uuid="4ae3c938-5c95-4707-9824-55462479ad57">
+        <ModelData type="DataConfiguration" uuid="2f32de18-230f-49f0-8db1-86499bb83cd9">
           <category>ModelData</category>
         </ModelData>
-        <Outports type="DataConfiguration" uuid="a3ac2729-ed98-4e95-af17-4309b6b49caf">
+        <Outports type="DataConfiguration" uuid="5ffd0101-08a1-4add-87ed-2bd47c1e0d4a">
           <category>Outports</category>
         </Outports>
-        <ParameterArguments type="DataConfiguration" uuid="32adf882-e778-49a3-a8c7-e005448f0f0b">
+        <ParameterArguments type="DataConfiguration" uuid="54230da9-fab3-4117-87d6-5da12c1804e8">
           <category>ParameterArguments</category>
         </ParameterArguments>
-        <SharedLocalDataStores type="DataConfiguration" uuid="9400d842-a547-41fd-9393-633037f79ceb">
+        <SharedLocalDataStores type="DataConfiguration" uuid="8e17347b-6fd6-4af7-8ff5-6c1029c16814">
           <category>SharedLocalDataStores</category>
         </SharedLocalDataStores>
-        <SharedUtility type="FunctionConfiguration" uuid="702d0f29-6f2c-4915-838d-1b129b1ac56e"/>
+        <SharedUtility type="FunctionConfiguration" uuid="046f14e7-eacc-4141-a7be-e9c572f86533"/>
       </SoftwareComponentTemplates>
-      <packageChecksums type="PackageChecksum" uuid="5f5ae4e6-98d6-4ab7-9fa8-000f5724f259">
+      <packageChecksums type="PackageChecksum" uuid="033ccfc0-2e18-4189-8d05-bb30c60aa307">
         <Checksum>Cn8PYjf0+E0PctWymWwp7Kw58+PDJUfw/xzmjw40fJrxAJNvTgYJShOvVaEPsF4rmXaUYgSAI+i90HErLua5CQ==</Checksum>
         <PackageName>Simulink</PackageName>
       </packageChecksums>
-      <packageChecksums type="PackageChecksum" uuid="08b6355d-f2c8-4cc8-ae16-8b66060265a0">
+      <packageChecksums type="PackageChecksum" uuid="ac437ba5-9b9b-4a38-bf84-da43bf41168d">
         <Checksum>N/NztYSleSTGnmPWdZgWosqbDWczGyycBLdkZtukxFg3x8ohm1vAYk+r/5K0xQzxHBqBkousln40dg8KV9FnGA==</Checksum>
         <PackageName>SimulinkBuiltin</PackageName>
       </packageChecksums>
@@ -646,7 +646,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="UseRowMajorAlgorithm">off</P>
         <P Name="OptimizationLevel">level2</P>
         <P Name="OptimizationPriority">Balanced</P>
-        <P Name="OptimizationCustomize">on</P>
+        <P Name="OptimizationCustomize">off</P>
         <P Name="LabelGuidedReuse">off</P>
         <P Name="MultiThreadedLoops">off</P>
         <P Name="DenormalBehavior">GradualUnderflow</P>
@@ -1319,8 +1319,8 @@ __MWOPC_PART_BEGIN__ /simulink/hdlParams.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2020b_20191110">
-  <System type="System" uuid="a06d7c99-b57e-40dc-bac0-a889c2f6d17c">
-    <Interface type="Interface" uuid="865557d3-873b-4714-b98f-afaab95fff2b"/>
+  <System type="System" uuid="18609afe-522d-46b5-996f-a863974292a3">
+    <Interface type="Interface" uuid="d46fc02a-9d64-4373-8b12-354356c0aff0"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
@@ -1332,97 +1332,32 @@ __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2021b_202106150630">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="0e99b4bb-8515-46cd-9a8e-fe99572e72ad">
-    <globalData type="sltp.mm.core.GlobalData" uuid="073152e7-0c69-4772-9317-e354156c7fac">
-      <dataName>portIn2</dataName>
-      <type>RootInport</type>
-    </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="66929cb1-4947-4799-9f57-31a2ae969bc9">
-      <dataName>portOut1</dataName>
-      <type>RootOutport</type>
-    </globalData>
-    <priorityDirection>HighNumberLast</priorityDirection>
-    <editorState type="sltp.mm.core.EditorState" uuid="d7dd3509-038f-4244-8713-5bc15ad0d5cf">
-      <isSynchronized>true</isSynchronized>
-      <panelState type="sltp.mm.core.EditorPanelState" uuid="e606ed07-d393-4961-bd21-dea0c2e0d4ec"/>
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="2107bc6f-fcb6-4725-bb36-cd2df1f58a01">
+    <editorState type="sltp.mm.core.EditorState" uuid="254fd2e9-0136-4912-ad47-f7424492d216">
+      <panelState type="sltp.mm.core.EditorPanelState" uuid="f95cbb1a-f237-4863-9e7a-c06a40f09beb"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="8d163efe-e44f-471e-b725-8a82f358aece">
-      <context type="sltp.mm.core.Context" uuid="0e99b4bb-8515-46cd-9a8e-fe99572e72ad"/>
+    <rootTask type="sltp.mm.core.Task" uuid="731abc24-f3f8-456e-8e70-e9f242a67abf">
+      <context type="sltp.mm.core.Context" uuid="2107bc6f-fcb6-4725-bb36-cd2df1f58a01"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="85af4583-54be-4d36-9594-9482f30f48b3">
-        <tasks type="sltp.mm.core.Task" uuid="e92960a0-be16-45e6-be8e-aad604d64ce0">
-          <context type="sltp.mm.core.Context" uuid="0e99b4bb-8515-46cd-9a8e-fe99572e72ad"/>
-          <explicit>false</explicit>
-          <id>1</id>
-          <isTimed>true</isTimed>
-          <name>D1</name>
-          <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="4fbc1c2f-6d13-4d60-91d4-f6947ff44c36">
-            <annotation>D1</annotation>
-            <color>-436207361</color>
-            <hasBlocks>true</hasBlocks>
-            <identifier>ClassicPeriodicDiscrete0.0050</identifier>
-            <rateSpec type="sltp.mm.core.RateSpec">
-              <period>.005</period>
-            </rateSpec>
-            <sti>0</sti>
-          </rates>
-        </tasks>
-      </subgraph>
+      <subgraph type="sltp.mm.core.Graph" uuid="4cd2c5fe-6448-4ac0-86a1-d6665ad30dad"/>
     </rootTask>
   </sltp.mm.core.Context>
 </sltp_graph>
 __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2022a_202109161050">
-  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="f05d8a48-f8fb-4e60-9b9a-236412b025cf">
-    <entities type="diagram.editor.model.Entity" uuid="e39eda45-23bf-4bab-9de1-e1ccd77348bf">
-      <position>0,0</position>
-      <size>0,0,0,0</size>
-      <syntaxElement type="sltp.mm.syntax.Node" uuid="23896e22-b1f9-4afe-80c1-24530c8cf203"/>
-      <title>D1</title>
-      <type>implicit-periodic</type>
-      <subDiagram type="diagram.editor.model.Diagram" uuid="b3f05df8-d8ef-4fa1-b6dd-76ba168c4178">
-        <position>0,0</position>
-        <syntaxElement type="sltp.mm.syntax.Graph" uuid="c6bb9caa-dd6a-4a29-91c2-1d39caba1abc"/>
-        <title>D1</title>
-        <type>graph.Graph</type>
-      </subDiagram>
-    </entities>
-    <syntaxElement type="sltp.mm.syntax.Graph" uuid="40861888-66d2-43ef-8b01-d897def8a415"/>
+  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="4c59ac63-5019-486a-bbe3-762a741adc1d">
+    <syntaxElement type="sltp.mm.syntax.Graph" uuid="e79f3656-5cb7-4513-ba5f-339731b5e496"/>
     <title>Default</title>
     <type>graph.Graph</type>
   </diagram.editor.model.Diagram>
-  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="732edaba-4686-4d26-8486-03cb866f216d">
-    <globalData type="sltp.mm.syntax.GlobalData" uuid="042d441f-adf2-4753-ada4-05b2f01f091c">
-      <dataName>portIn2</dataName>
-      <type>RootInport</type>
-    </globalData>
-    <globalData type="sltp.mm.syntax.GlobalData" uuid="35b2e3d7-c03f-4f94-9c9e-71b49ce90ef6">
-      <dataName>portOut1</dataName>
-      <type>RootOutport</type>
-    </globalData>
-    <rootGraph type="sltp.mm.syntax.Graph" uuid="40861888-66d2-43ef-8b01-d897def8a415">
-      <children type="sltp.mm.syntax.Node" uuid="23896e22-b1f9-4afe-80c1-24530c8cf203">
-        <priority>40</priority>
-        <rates type="sltp.mm.syntax.RateData">
-          <color>#e60000</color>
-          <hasBlocks>true</hasBlocks>
-          <rate>0.005</rate>
-          <title>D1</title>
-        </rates>
-        <title>D1</title>
-        <type>implicit-periodic</type>
-        <diagramElement type="diagram.editor.model.Entity" uuid="e39eda45-23bf-4bab-9de1-e1ccd77348bf"/>
-        <subgraph type="sltp.mm.syntax.Graph" uuid="c6bb9caa-dd6a-4a29-91c2-1d39caba1abc">
-          <title>D1</title>
-          <diagramElement type="diagram.editor.model.Diagram" uuid="b3f05df8-d8ef-4fa1-b6dd-76ba168c4178"/>
-        </subgraph>
-      </children>
+  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="704116f2-f97a-4217-b9ff-dd0de12f854b">
+    <rootGraph type="sltp.mm.syntax.Graph" uuid="e79f3656-5cb7-4513-ba5f-339731b5e496">
+      <priorityDirection>HighNumberFirst</priorityDirection>
       <title>Default</title>
-      <diagramElement type="diagram.editor.model.Diagram" uuid="f05d8a48-f8fb-4e60-9b9a-236412b025cf"/>
+      <diagramElement type="diagram.editor.model.Diagram" uuid="4c59ac63-5019-486a-bbe3-762a741adc1d"/>
     </rootGraph>
   </sltp.mm.syntax.Context>
 </sltp_editor>
@@ -1492,8 +1427,8 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
       <P Name="IntegratorMethod">Forward Euler</P>
       <P Name="FilterMethod">Forward Euler</P>
       <P Name="ControllerParametersSource">internal</P>
-      <P Name="P">0.05</P>
-      <P Name="I">0.005</P>
+      <P Name="P">0.005</P>
+      <P Name="I">0.0001</P>
       <P Name="UseKiTs">off</P>
       <P Name="D">0</P>
       <P Name="N">100</P>
@@ -1737,72 +1672,18 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Object PropName="ExplorerBarInfo" ObjectID="4" ClassName="Simulink.ExplorerBarInfo">
         <P Name="Visible" Class="logical">1</P>
       </Object>
-      <Array PropName="EditorsInfo" Type="Simulink.EditorInfo" Dimension="1*5">
-        <Object ObjectID="5">
-          <P Name="IsActive" Class="logical">1</P>
-          <P Name="IsTabbed" Class="logical">1</P>
-          <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
-          <P Name="LoadSaveID" Class="char">0</P>
-          <P Name="Extents" Class="double">[1710.0, 1072.0]</P>
-          <P Name="ZoomFactor" Class="double">2.0597014925373136</P>
-          <P Name="Offset" Class="double">[-216.87308093370092, -71.287159778225771]</P>
-          <P Name="SceneRectInView" Class="double">[-216.87308093370092, -71.287159778225771, 664.17391304347814, 416.37101449275355]</P>
-        </Object>
-        <Object ObjectID="6">
-          <P Name="IsActive" Class="logical">0</P>
-          <P Name="IsTabbed" Class="logical">1</P>
-          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
-          <P Name="LoadSaveID" Class="char">17:880</P>
-          <P Name="Extents" Class="double">[1710.0, 1072.0]</P>
-          <P Name="ZoomFactor" Class="double">1.0</P>
-          <P Name="Offset" Class="double">[-437.8828125, -287.8]</P>
-          <P Name="SceneRectInView" Class="double">[-437.8828125, -287.8, 1368.0, 857.6]</P>
-        </Object>
-        <Object ObjectID="7">
-          <P Name="IsActive" Class="logical">0</P>
-          <P Name="IsTabbed" Class="logical">1</P>
-          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
-          <P Name="LoadSaveID" Class="char">17:789</P>
-          <P Name="Extents" Class="double">[1710.0, 1072.0]</P>
-          <P Name="ZoomFactor" Class="double">1.0</P>
-          <P Name="Offset" Class="double">[-436.32421875, -287.8]</P>
-          <P Name="SceneRectInView" Class="double">[-436.32421875, -287.8, 1368.0, 857.6]</P>
-        </Object>
-        <Object ObjectID="8">
-          <P Name="IsActive" Class="logical">0</P>
-          <P Name="IsTabbed" Class="logical">1</P>
-          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
-          <P Name="LoadSaveID" Class="char">17</P>
-          <P Name="Extents" Class="double">[1710.0, 1072.0]</P>
-          <P Name="ZoomFactor" Class="double">0.23360655737704916</P>
-          <P Name="Offset" Class="double">[-2308.0000000000005, -1380.0649122807019]</P>
-          <P Name="SceneRectInView" Class="double">[-2308.0000000000005, -1380.0649122807019, 5856.0000000000009, 3671.1298245614039]</P>
-        </Object>
-        <Object ObjectID="9">
-          <P Name="IsActive" Class="logical">0</P>
-          <P Name="IsTabbed" Class="logical">0</P>
-          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
-          <P Name="LoadSaveID" Class="char">17:911</P>
-          <P Name="Extents" Class="double">[1710.0, 1072.0]</P>
-          <P Name="ZoomFactor" Class="double">1.0</P>
-          <P Name="Offset" Class="double">[-437.625, -290.3]</P>
-          <P Name="SceneRectInView" Class="double">[-437.625, -290.3, 1368.0, 857.6]</P>
-        </Object>
-      </Array>
+      <Object PropName="EditorsInfo" ObjectID="5" ClassName="Simulink.EditorInfo">
+        <P Name="IsActive" Class="logical">1</P>
+        <P Name="IsTabbed" Class="logical">1</P>
+        <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
+        <P Name="LoadSaveID" Class="char">0</P>
+        <P Name="Extents" Class="double">[2515.0, 1104.0]</P>
+        <P Name="ZoomFactor" Class="double">2.0597014925373136</P>
+        <P Name="Offset" Class="double">[-216.87308093370081, -71.287159778225714]</P>
+        <P Name="SceneRectInView" Class="double">[-216.87308093370081, -71.287159778225714, 976.84057971014477, 428.79999999999995]</P>
+      </Object>
       <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*2">
-        <Object ObjectID="10">
-          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
-          <P Name="ID" Class="char">Property Inspector</P>
-          <P Name="Visible" Class="logical">0</P>
-          <P Name="CreateCallback" Class="char"/>
-          <P Name="UserData" Class="char"/>
-          <P Name="Floating" Class="logical">0</P>
-          <P Name="DockPosition" Class="char">Right</P>
-          <P Name="Width" Class="int32">512</P>
-          <P Name="Height" Class="int32">384</P>
-          <P Name="Minimized" Class="char">Unset</P>
-        </Object>
-        <Object ObjectID="11">
+        <Object ObjectID="6">
           <P Name="Type" Class="char">Simulink:Editor:ReferencedFiles</P>
           <P Name="ID" Class="char">Referenced Files</P>
           <P Name="Visible" Class="logical">0</P>
@@ -1815,12 +1696,24 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Height" Class="int32">384</P>
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
+        <Object ObjectID="7">
+          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
+          <P Name="ID" Class="char">Property Inspector</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char"/>
+          <P Name="UserData" Class="char"/>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Right</P>
+          <P Name="Width" Class="int32">512</P>
+          <P Name="Height" Class="int32">384</P>
+          <P Name="Minimized" Class="char">Unset</P>
+        </Object>
       </Array>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB5AP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAApwD///8AAAABAAADIAAABHf8AgAAAAH8AAAAlwAABHcAAAAmAP////oAAAABAgAAAAL7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAhYA////+/////8BAAAAAP////8AAAAmAP///wAAAAMAAAAAAAAAAPwBAAAABPwAAAAA/////wAAAAAA////+v////8BAAAAAPwAAAAA/////wAAAAAA////+v////8BAAAAAPwAAAAA/////wAAAAAA////+v////8BAAAAAPwAAAAA/////wAAAAAA////+v////8BAAAAAvv/////AAAAAAD/////AAABrgD////7/////wAAAAAA/////wAAAR0A////AAAG2wAABHcAAAABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAQAAADYAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEwAZQBmAHQCAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAOABjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAUgBpAGcAaAB0AgAAAAD/////AAAAAAAAAAAAAAADAAAAAQAAADoAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEIAbwB0AHQAbwBtAQAAAAD/////AAAAAAAAAAA=</P>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB5AP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAApwD///8AAAABAAADOgAABHf8AgAAAAH8AAAAlwAABHcAAAAAAP////r/////AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAhYA////AAAAAwAAAAAAAAAA/AEAAAAE/AAAAAD/////AAAAAAD////6/////wEAAAAA/AAAAAD/////AAAAAAD////6/////wEAAAAA/AAAAAD/////AAAAAAD////6/////wEAAAAA+/////8AAAAAAP////8AAAGuAP///wAACgAAAASXAAAAAQAAAAIAAAABAAAAAvwAAAADAAAAAAAAAAAAAAABAAAAAAAAAAMAAAAA</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">22420f6d-f102-4ddf-884e-eccf084adcd9</P>
     </Object>
-    <P Name="BDUuid" Class="char">55831f87-c32f-45d5-a1bf-47f1ab214d4d</P>
+    <P Name="BDUuid" Class="char">ba033c2c-75c7-44ab-9b44-8444f2ba3460</P>
   </Object>
 </WindowsInfo>
 

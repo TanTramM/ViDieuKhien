@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'pid_model'.
  *
- * Model version                  : 26.2
+ * Model version                  : 26.7
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Dec  8 22:34:03 2025
+ * C/C++ source code generated on : Thu Dec 11 22:00:07 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: 32-bit Generic
@@ -19,7 +19,6 @@
 /* Exported block signals */
 real_T In2;                            /* '<Root>/In2' */
 real_T Out1;                           /* '<Root>/Saturation' */
-real_T Out2;                           /* '<Root>/Pulse Generator' */
 
 /* Block states (default storage) */
 D_Work_pid_model pid_model_DWork;
@@ -62,7 +61,7 @@ void pid_model_step(void)
    *  DiscreteIntegrator: '<S33>/Integrator'
    *  Gain: '<S38>/Proportional Gain'
    */
-  Out1 = (0.005 * rtb_Add + pid_model_DWork.Integrator_DSTATE) +
+  Out1 = (0.05 * rtb_Add + pid_model_DWork.Integrator_DSTATE) +
     rtb_FilterCoefficient;
 
   /* Saturate: '<Root>/Saturation' */
@@ -80,21 +79,10 @@ void pid_model_step(void)
 
   /* End of Saturate: '<Root>/Saturation' */
 
-  /* DiscretePulseGenerator: '<Root>/Pulse Generator' */
-  Out2 = ((pid_model_DWork.clockTickCounter_c < 200) &&
-          (pid_model_DWork.clockTickCounter_c >= 0));
-
-  /* DiscretePulseGenerator: '<Root>/Pulse Generator' */
-  if (pid_model_DWork.clockTickCounter_c >= 399) {
-    pid_model_DWork.clockTickCounter_c = 0;
-  } else {
-    pid_model_DWork.clockTickCounter_c++;
-  }
-
   /* Update for DiscreteIntegrator: '<S33>/Integrator' incorporates:
    *  Gain: '<S30>/Integral Gain'
    */
-  pid_model_DWork.Integrator_DSTATE += 0.0001 * rtb_Add * 0.005;
+  pid_model_DWork.Integrator_DSTATE += 0.005 * rtb_Add * 0.005;
 
   /* Update for DiscreteIntegrator: '<S28>/Filter' */
   pid_model_DWork.Filter_DSTATE += 0.005 * rtb_FilterCoefficient;

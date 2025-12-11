@@ -46,7 +46,7 @@
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN PFP */
-void Control_Loop_5ms(void);
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -57,7 +57,7 @@ void Control_Loop_5ms(void);
 /* External variables --------------------------------------------------------*/
 
 /* USER CODE BEGIN EV */
-extern volatile uint32_t pid_tick_ms;
+
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -213,6 +213,7 @@ void HAL_SYSTICK_Callback(void)
         pid_tick_ms = 0;
 				
 				Control_Loop_5ms(); // Call every 5ms
-    }
+   }
+	
 }
 /* USER CODE END 1 */

@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'pid_model'.
  *
- * Model version                  : 26.2
+ * Model version                  : 26.7
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Dec  8 22:34:03 2025
+ * C/C++ source code generated on : Thu Dec 11 22:00:07 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: 32-bit Generic
@@ -36,7 +36,6 @@ typedef struct {
   real_T Integrator_DSTATE;            /* '<S33>/Integrator' */
   real_T Filter_DSTATE;                /* '<S28>/Filter' */
   int32_T clockTickCounter;            /* '<Root>/Setpoint (deg)' */
-  int32_T clockTickCounter_c;          /* '<Root>/Pulse Generator' */
 } D_Work_pid_model;
 
 /* Real-time Model Data Structure */
@@ -57,7 +56,6 @@ extern D_Work_pid_model pid_model_DWork;
  */
 extern real_T In2;                     /* '<Root>/In2' */
 extern real_T Out1;                    /* '<Root>/Saturation' */
-extern real_T Out2;                    /* '<Root>/Pulse Generator' */
 
 /* Model entry point functions */
 extern void pid_model_initialize(void);

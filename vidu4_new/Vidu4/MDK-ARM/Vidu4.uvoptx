@@ -153,35 +153,15 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>enc_cnt,0x0A</ItemText>
+          <ItemText>htim2.Instance-&gt;CNT,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>htim2.Instance-&gt;CNT,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>2</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>pid_model_DWork</ItemText>
-        </Ww>
-        <Ww>
-          <count>3</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>ccr</ItemText>
-        </Ww>
-        <Ww>
-          <count>4</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>duty_ratio</ItemText>
-        </Ww>
-        <Ww>
-          <count>5</count>
-          <WinNumber>1</WinNumber>
           <ItemText>In2</ItemText>
         </Ww>
         <Ww>
-          <count>6</count>
+          <count>2</count>
           <WinNumber>1</WinNumber>
           <ItemText>Out1</ItemText>
         </Ww>

@@ -47,8 +47,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2012-03-08T23:56:49Z</dcterms:created>
   <dc:creator>NGUYEN VINH HAO</dc:creator>
   <cp:lastModifiedBy>Tan_Tram</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-12-11T15:00:06Z</dcterms:modified>
-  <cp:revision>26.7</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-12-11T16:19:58Z</dcterms:modified>
+  <cp:revision>26.8</cp:revision>
   <cp:version>R2022a</cp:version>
 </cp:coreProperties>
 
@@ -129,8 +129,8 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="RTWModifiedTimeStamp">687391199</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:26.7&gt;</P>
+      <P Name="RTWModifiedTimeStamp">687391786</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:26.8&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -511,7 +511,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
         <P Name="StartTime">0.0</P>
-        <P Name="StopTime">10.0</P>
+        <P Name="StopTime">50</P>
         <P Name="AbsTol">auto</P>
         <P Name="AutoScaleAbsTol">on</P>
         <P Name="FixedStep">0.005</P>
@@ -1332,12 +1332,12 @@ __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2021b_202106150630">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="0e99b4bb-8515-46cd-9a8e-fe99572e72ad">
-    <globalData type="sltp.mm.core.GlobalData" uuid="073152e7-0c69-4772-9317-e354156c7fac">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="a6e40df0-8a1d-4e8a-b064-ec844b350f43">
+    <globalData type="sltp.mm.core.GlobalData" uuid="9b449619-c3f1-4e87-98ac-c0647361a589">
       <dataName>portIn2</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="66929cb1-4947-4799-9f57-31a2ae969bc9">
+    <globalData type="sltp.mm.core.GlobalData" uuid="a9231796-9423-415f-b1b7-79dddd83bfc5">
       <dataName>portOut1</dataName>
       <type>RootOutport</type>
     </globalData>
@@ -1346,20 +1346,20 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="e606ed07-d393-4961-bd21-dea0c2e0d4ec"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="8d163efe-e44f-471e-b725-8a82f358aece">
-      <context type="sltp.mm.core.Context" uuid="0e99b4bb-8515-46cd-9a8e-fe99572e72ad"/>
+    <rootTask type="sltp.mm.core.Task" uuid="fc519898-711e-468a-9fef-13af7417d689">
+      <context type="sltp.mm.core.Context" uuid="a6e40df0-8a1d-4e8a-b064-ec844b350f43"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="85af4583-54be-4d36-9594-9482f30f48b3">
-        <tasks type="sltp.mm.core.Task" uuid="e92960a0-be16-45e6-be8e-aad604d64ce0">
-          <context type="sltp.mm.core.Context" uuid="0e99b4bb-8515-46cd-9a8e-fe99572e72ad"/>
+      <subgraph type="sltp.mm.core.Graph" uuid="475c6c45-894a-4d94-a06b-8081981cf24c">
+        <tasks type="sltp.mm.core.Task" uuid="e02b3da3-4608-45ea-b639-ced983321381">
+          <context type="sltp.mm.core.Context" uuid="a6e40df0-8a1d-4e8a-b064-ec844b350f43"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>D1</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="4fbc1c2f-6d13-4d60-91d4-f6947ff44c36">
+          <rates type="sltp.mm.core.Rate" uuid="de89096d-7a7b-452e-95da-846dfca34aaa">
             <annotation>D1</annotation>
             <color>-436207361</color>
             <hasBlocks>true</hasBlocks>
@@ -1450,7 +1450,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <P Name="ExecutionDomainType">Deduce</P>
   <P Name="ZoomFactor">206</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">20</P>
+  <P Name="SIDHighWatermark">21</P>
   <P Name="SimulinkSubDomain">Simulink</P>
   <Block BlockType="Inport" Name="In2" SID="5">
     <P Name="Position">[100, 193, 130, 207]</P>
@@ -1673,6 +1673,14 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
       <P Name="TestPoint">on</P>
     </Port>
   </Block>
+  <Block BlockType="Scope" Name="Scope" SID="21">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[215, -21, 245, 11]</P>
+    <P Name="ZOrder">312</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-125.00000&apos;,&apos;MaxYLimReal&apos;,&apos;1125.00000&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;1125.00000&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Setpoint (deg)&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-125.00000&apos;,&apos;MaxYLimReal&apos;,&apos;1125.00000&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;1125.00000&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2022a&apos;)),&apos;Version&apos;,&apos;2022a&apos;,&apos;Position&apos;,[1 49 2048 1028.8],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
+  </Block>
   <Block BlockType="DiscretePulseGenerator" Name="Setpoint&#xA;(deg)" SID="18">
     <P Name="Ports">[0, 1]</P>
     <P Name="Position">[100, 79, 130, 111]</P>
@@ -1700,7 +1708,16 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <Line>
     <P Name="ZOrder">3</P>
     <P Name="Src">18#out:1</P>
-    <P Name="Dst">2#in:1</P>
+    <P Name="Points">[42, 0]</P>
+    <Branch>
+      <P Name="ZOrder">8</P>
+      <P Name="Points">[0, -100]</P>
+      <P Name="Dst">21#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">6</P>
+      <P Name="Dst">2#in:1</P>
+    </Branch>
   </Line>
   <Line>
     <P Name="Name">In2</P>
@@ -1743,10 +1760,10 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
           <P Name="LoadSaveID" Class="char">0</P>
-          <P Name="Extents" Class="double">[1710.0, 1072.0]</P>
+          <P Name="Extents" Class="double">[2005.0, 1072.0]</P>
           <P Name="ZoomFactor" Class="double">2.0597014925373136</P>
           <P Name="Offset" Class="double">[-216.87308093370092, -71.287159778225771]</P>
-          <P Name="SceneRectInView" Class="double">[-216.87308093370092, -71.287159778225771, 664.17391304347814, 416.37101449275355]</P>
+          <P Name="SceneRectInView" Class="double">[-216.87308093370092, -71.287159778225771, 778.75362318840564, 416.37101449275355]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
@@ -1816,7 +1833,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
       </Array>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB5AP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAApwD///8AAAABAAADIAAABHf8AgAAAAH8AAAAlwAABHcAAAAmAP////oAAAABAgAAAAL7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAhYA////+/////8BAAAAAP////8AAAAmAP///wAAAAMAAAAAAAAAAPwBAAAABPwAAAAA/////wAAAAAA////+v////8BAAAAAPwAAAAA/////wAAAAAA////+v////8BAAAAAPwAAAAA/////wAAAAAA////+v////8BAAAAAPwAAAAA/////wAAAAAA////+v////8BAAAAAvv/////AAAAAAD/////AAABrgD////7/////wAAAAAA/////wAAAR0A////AAAG2wAABHcAAAABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAQAAADYAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEwAZQBmAHQCAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAOABjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAUgBpAGcAaAB0AgAAAAD/////AAAAAAAAAAAAAAADAAAAAQAAADoAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEIAbwB0AHQAbwBtAQAAAAD/////AAAAAAAAAAA=</P>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB5AP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAApwD///8AAAABAAAB+QAABHf8AgAAAAH8AAAAlwAABHcAAAAmAP////oAAAABAgAAAAL7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAhYA////+/////8BAAAAAP////8AAAAmAP///wAAAAMAAAAAAAAAAPwBAAAABPwAAAAA/////wAAAAAA////+v////8BAAAAAPwAAAAA/////wAAAAAA////+v////8BAAAAAPwAAAAA/////wAAAAAA////+v////8BAAAAAPwAAAAA/////wAAAAAA////+v////8BAAAAAvv/////AAAAAAD/////AAABrgD////7/////wAAAAAA/////wAAAR0A////AAAIAgAABHcAAAABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAQAAADYAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEwAZQBmAHQCAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAOABjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAUgBpAGcAaAB0AgAAAAD/////AAAAAAAAAAAAAAADAAAAAQAAADoAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEIAbwB0AHQAbwBtAQAAAAD/////AAAAAAAAAAA=</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">22420f6d-f102-4ddf-884e-eccf084adcd9</P>
     </Object>

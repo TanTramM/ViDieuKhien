@@ -70,7 +70,7 @@ void Control_Loop_5ms(void);
  *  - TIM2 encoder mode = TI1 and TI2, polarity Rising  -> x2 counting
  *    => CPR (counts per revolution) = PPR * 2 = 2000
  */
-#define ENCODER_PPR          1000.0
+#define ENCODER_PPR          960.0
 #define ENCODER_MODE_FACTOR  2.0        // x2 counting (TI1 & TI2, Rising)
 #define ENCODER_CPR          (ENCODER_PPR * ENCODER_MODE_FACTOR)
 

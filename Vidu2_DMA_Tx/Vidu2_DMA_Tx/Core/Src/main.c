@@ -61,6 +61,8 @@ const uint8_t txbuff[BUFF_SIZE] =
   0x0D,0x0A
 };
 uint32_t prev_tick = 0;
+volatile uint8_t uart2_tx_done = 1;   // 1 = idle/ready, 0 = busy
+volatile uint8_t uart2_tx_busy = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -76,7 +78,7 @@ static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */
-int a =0;
+
 /**
   * @brief  The application entry point.
   * @retval int
@@ -119,8 +121,18 @@ int main(void)
 		if ((HAL_GetTick() - prev_tick) >= 1000U) {
     prev_tick = HAL_GetTick();
 
-    HAL_UART_Transmit_DMA(&huart2, (uint8_t*)txbuff, BUFF_SIZE);
-		a= DMA1_Stream6->NDTR;
+		if (uart2_tx_done)                 
+		{
+				uart2_tx_done = 0;
+				uart2_tx_busy = 1;
+
+				if (HAL_UART_Transmit_DMA(&huart2, (uint8_t*)txbuff, BUFF_SIZE) != HAL_OK)
+				{
+						uart2_tx_done = 1;
+						uart2_tx_busy = 0;
+				}
+		}
+
 		}
     /* USER CODE END WHILE */
 
@@ -150,8 +162,8 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = 8;
-  RCC_OscInitStruct.PLL.PLLN = 192;
+  RCC_OscInitStruct.PLL.PLLM = 4;
+  RCC_OscInitStruct.PLL.PLLN = 100;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 4;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
@@ -244,7 +256,24 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if (huart->Instance == USART2)
+    {
+        uart2_tx_done = 1;
+        uart2_tx_busy = 0;
+    }
+}
 
+void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
+{
+    if (huart->Instance == USART2)
+    {
+        // n?u c� l?i UART khi DMA dang ch?y, cung tr? v? tr?ng th�i idle
+        uart2_tx_done = 1;
+        uart2_tx_busy = 0;
+    }
+}
 /* USER CODE END 4 */
 
 /**
